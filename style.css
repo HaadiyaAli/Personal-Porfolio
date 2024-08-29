@@ -39,6 +39,7 @@ a{
 }
 
 .mainbody{
+    display: inline;
     background-color:#eef5ff;
     width: 73%;
     height: 480px;
