@@ -11,8 +11,10 @@ body{
     0 0/15px 15px;
 }
 
+
 a{
     text-decoration: none;
+    color: darkblue;
 }
 
 #bottem_clouds{
@@ -25,10 +27,50 @@ a{
 
 .files img{
     height: 55px;
-    justify-content: center;
+    vertical-align: top;
 }
 
 .files{
-    margin: 30px 30px;
+    position:fixed;
+    text-align: center;
+    margin: 120px 30px;
+    display: inline-block
+  
 }
+
+.mainbody{
+    background-color:#eef5ff;
+    width: 73%;
+    height: 480px;
+    margin-right: 10%;
+    margin-top: 4%;
+    overflow: hidden;
+    overflow-y: scroll;
+    float: right;
+    border: solid black 2px;
+   
+    
+}
+
+.mainbody::-webkit-scrollbar {
+    display: none;
+  }
+
+.mainbody nav{
+    background-color: #c7d5f0;
+    border-bottom: solid black 2px;
+    text-align: right;
+    padding:3px;
+}
+
+.mainbody .content{
+    padding:10px;
+}
+
+@media(max-width:650px){
+    .mainbody{
+        margin-right:5%;
+    }
+}
+
 
