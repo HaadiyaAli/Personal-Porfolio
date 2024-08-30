@@ -17,9 +17,12 @@ a{
     color: darkblue;
 }
 
+
+
 #bottem_clouds{
     position: fixed;
     bottom: 0;
+    width: auto;
     height: 159px;
     display:flex;
     
@@ -34,7 +37,8 @@ a{
     position:fixed;
     text-align: center;
     margin: 120px 30px;
-    display: inline-block
+    display: inline-block;
+    cursor: pointer;
   
 }
 
@@ -49,6 +53,8 @@ a{
     overflow-y: scroll;
     float: right;
     border: solid black 2px;
+    border-radius: 15px;
+    
    
     
 }
@@ -64,9 +70,23 @@ a{
     padding:3px;
 }
 
-.mainbody .content{
+.mainbody .home{
     padding:10px;
+    display: flex;
 }
+
+.mainbody .contacts{
+    padding:10px;
+    display: none;
+   
+}
+
+.mainbody .projects{
+    padding:10px;
+    display: none;
+   
+}
+
 
 @media(max-width:650px){
     .mainbody{
@@ -75,3 +95,15 @@ a{
 }
 
 
+.clouds{
+    width: 100vw;
+    height: 100vh;
+     background-image: url(cloud-bg.png);
+      animation: seamlessloop 50s infinite linear;
+      background-size: cover;
+      background-repeat: repeat;
+    }
+    @keyframes seamlessloop{
+        from {background-position: 0}
+        to {background-position:  -120vw}
+    }
