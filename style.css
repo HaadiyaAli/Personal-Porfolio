@@ -70,11 +70,6 @@ a{
     padding:3px;
 }
 
-.mainbody .home{
-    padding:10px;
-    display: flex;
-}
-
 .mainbody .contacts{
     padding:10px;
     display: none;
@@ -106,4 +101,19 @@ a{
     @keyframes seamlessloop{
         from {background-position: 0}
         to {background-position:  -120vw}
+    }
+
+
+    /*Home page styling*/
+
+    .mainbody .home{
+        display: inline;
+       
+    }
+
+    #hello{
+        width:100%;
+        position: static;
+        height:auto;    
+        padding: 0%;
     }
